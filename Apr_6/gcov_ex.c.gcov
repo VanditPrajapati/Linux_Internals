@@ -1,0 +1,46 @@
+        -:    0:Source:gcov_ex.c
+        -:    0:Graph:gcov_ex.gcno
+        -:    0:Data:-
+        -:    0:Runs:0
+        -:    0:Programs:0
+        -:    1:#include<stdio.h>
+        -:    2:
+function into_string called 0 returned 0% blocks executed 0%
+    #####:    3:const char *into_string(int value)
+        -:    4:{
+        -:    5:	const char *ret;
+        -:    6:	
+    #####:    7:	switch(value)
+branch  0 never executed
+branch  1 never executed
+branch  2 never executed
+branch  3 never executed
+        -:    8:	{
+    #####:    9:		case 1:
+    #####:   10:			ret="one";
+    #####:   11:			break;
+        -:   12:		
+    #####:   13:		case 2:
+    #####:   14:			ret="two";
+        -:   15:			
+    #####:   16:		case 3: 
+    #####:   17:			ret="three";
+    #####:   18:			break;
+        -:   19:		
+    #####:   20:		default:
+    #####:   21:			ret="Less than 1 or more than 3";
+    #####:   22:			break;
+        -:   23:	}
+        -:   24:	
+    #####:   25:	return ret;
+        -:   26:}
+        -:   27:
+        -:   28:
+function main called 0 returned 0% blocks executed 0%
+    #####:   29:int main()
+        -:   30:{
+    #####:   31:	printf("into_string(2) = %s", (char*)into_string(2));
+call    0 never executed
+call    1 never executed
+    #####:   32:	return 0;
+        -:   33:}
