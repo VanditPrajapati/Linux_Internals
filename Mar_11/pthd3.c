@@ -15,7 +15,7 @@ printf("pid : %u and tid : %u \n",(unsigned int)pid,(unsigned int)tid);
 int main(void)
 {
 int err;
-err= pthread_create(&tid,NULL,threadfun,"Hello Devesh");
+err= pthread_create(&tid,NULL,threadfun,"Hello Vandit");
 if(err!=0)
 printf("can't create thread : %s \n",strerror(err));
 while(1);
